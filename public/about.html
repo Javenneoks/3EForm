@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css" />
+    <title> 3eSystems</title>
+    <link rel="icon" href="imgs/logo-sq.png" type="image/icon type">
+
+  </head>
+  <body class="font-Poppins">
+    <!-- Header -->
+    <header>      
+      <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a class="flex items-center" href="index.html">
+            <img src="imgs/logo.png" class="mr-3 h-6 sm:h-9" alt="3E System Logo " width=100%/>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <div class="flex md:order-2">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="contacts.html">Get Started</a></button>
+        </div>
+        <div class="toggle__menu" id='toggle-menu'>
+          <i class="bx bx-grid-alt"></i>
+        </div>
+        <ul class="nav__list" id='nav-menu'>
+          <div class="close__menu" id='close-menu'>
+            <i class="bx bx-x"></i>
+          </div>
+          <li class="nav__item"> <a href="index.html" class="nav__link" >Home</a> </li>
+          <li class="nav__item dropdown"> <a href="solutions.html" class="nav__link dropdown__link">Solutions <i class="bx bxs-chevron-down dropdown__icon"></i>  </a>
+            <div class='megamenu'>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu">AI & Computer Vision </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-hard-hat'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#AICV"> PPE Detection</a>
+                     <p>Detects helmets, gloves, safety vests, masks, and boots</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-truck'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#PPE"> Vehicles Tracking</a>
+                     <p>Track the movements of vehicles at key junctions and roads</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-traffic-barrier'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#vehicles"> Intrusion Detection</a>
+                     <p>Demarcate danger areas and monitor for any trespasses</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-body' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#intrusion"> Posture Detection</a>
+                     <p>Ensure workers adopt proper posture and techniques</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-accessibility' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#posture"> Fall Detection</a>
+                     <p>24/7 Surveillance to detect various forms of accidents</p>
+                   </div>
+                 </li>
+
+                 <li class="megamenu__item">
+                  <div class="megamenu__icon"><i class='bx bx-task' ></i></div>
+                  <div class="megamenu__link">
+                    <a href="solutions.html#fall"> COVID-19 Safe Management Measures</a>
+                    <p>Ensure compliance to COVID-19 Safe Management Measures</p>
+                  </div>
+                </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-hot' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#safeManagement"> Danger Detection</a>
+                     <p>24/7 Surveillance to detect various forms of danger</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-street-view'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#danger"> Crowd Flow Tracking</a>
+                     <p>Track the number of people and crowd flow</p>
+                   </div>
+                 </li>
+
+            
+               </ul>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> Productivity Systems </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-spreadsheet' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#ProductivitySystems"> Assets Management System</a>
+                     <p>Manage, monitor, and track the status of all assets</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-bug' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#assets"> Defect Inspection Application </a>
+                     <p>Streamline defect inspection workflow process digitally</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-building-house' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#defect"> Interactive Virtual Space</a>
+                     <p>Communicate virtually with on-site and remote stakeholders</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-windows'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#VR"> Integrated Project Management System </a>
+                     <p>Connect effortlessly to database via mobile devices</p>
+                   </div>
+                 </li>
+               </ul>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> Data Warehousing & Analytics</li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-data'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#DataWarehousing"> Data Warehouse & Datalakes </a>
+                     <p>Single source of truth for all site-related data</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-server' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#warehouse"> Data Piplines for ETL Operations </a>
+                     <p>Orchestrate pipelines to extract, transform and load daily data</p>
+                   </div>
+                 </li>
+               </ul>            
+             </div>          
+          </li>
+          <li class="nav__item dropdown"> <a href="products.html" class="nav__link dropdown__link">Products <i class="bx bxs-chevron-down dropdown__icon"></i>  </a>
+            <div class='megamenu'>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> 3eVision™ AI Systems </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-traffic-cone' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html"> 3eVision™ Worksites</a>
+                     <p>PPE Detection, Traffic Control, Assets Management, Project Monitoring</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-home-smile'></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#eldercare"> 3eVision™ Eldercare </a>
+                     <p>Accident and Fall Detection, Danger Detection, Resident Analysis, Quality Assurance</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-train' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#transport"> 3eVision™ Transport </a>
+                     <p>Passenger Tracking, Trainload Analysis, Object Detection, Crowd Size Analysis, Site Navigation</p>
+                   </div>
+                 </li>
+               </ul>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> Software </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-mobile' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#software"> Mobile App </a>
+                     <p>Receive notifications and check in wherever you are</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-globe'></i></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#software"> Web Application </a>
+                     <p>Access to site-related data effortlessly</p>
+                   </div>
+                 </li>
+
+                 <li class="megamenu__item">
+                  <div class="megamenu__icon"><i class='bx bx-terminal'></i></div>
+                  <div class="megamenu__link">
+                    <a href="products.html#software"> Desktop Application </a>
+                    <p>Access to site-related data effortlessly</p>
+                  </div>
+                </li>
+               </ul>            
+             </div>          
+          </li>
+          <li class="nav__item"> <a href="resources.html" class="nav__link">Resources</a> </li>
+          <li class="nav__item"> <a href="about.html" class="nav__link text-blue-800">About Us</a> </li>
+          <li class="nav__item"> <a href="contacts.html" class="nav__link">Contact</a> </li>
+
+        </ul>
+
+        </div>
+      </nav>
+     
+    </header>
+
+    <!-- Content -->
+    
+    <!-- FAQ -->
+    <section class="py-20 mt-36">
+            <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Page in development... Coming soon</h1>
+        <p class="text-center text-bookmark-grey mt-4">
+          Striving for optimization in every type of operation, we provide highly customized 
+          solutions to automate workflow while reducing wastes at each stage. 
+          
+        </p>
+      </div>
+    </section>
+
+
+      <!-- Contact Us -->
+      <section class="bg-bookmark-purple text-white py-20">
+        <div class="container">
+          <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+            <p class="font-light uppercase text-center mb-8">Start your journey today</p>
+            <h1 class="text-3xl text-center">Contact us for a demo</h1>
+            <div class="flex flex-col sm:flex-row gap-6 mt-8">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+              />
+              <button type="button" class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black">
+                <a href="contacts.html">Contact Us</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <script src="./script.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-bookmark-blue py-8">
+      <div class="container flex flex-col md:flex-row items-center">
+        <div class="flex flex-1 flex-wrap items-center justify-center gap-12 ">
+          <ul class="flex text-white uppercase gap-3 lg:gap-12 text-xs footer-list ">
+            <li> <a href="index.html">© 3eSystems 2022</a> </li>
+            <li class="cursor-pointer"> <a href="solutions.html">Solutions</a></li>
+            <li class="cursor-pointer"> <a href="products.html">Products</a></li>
+            <li class="cursor-pointer"> <a href="resources.html">Resources</a> </li>
+            <li class="cursor-pointer"> <a href="about.html">About Us</a></li>
+            <li class="cursor-pointer"> <a href="contacts.html">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

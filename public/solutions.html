@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css" />
+    <title> 3eSystems</title>
+    <link rel="icon" href="imgs/logo-sq.png" type="image/icon type">
+
+  </head>
+  <body class="font-Poppins">
+    <!-- Header -->
+    <header>      
+      <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a class="flex items-center" href="index.html">
+            <img src="imgs/logo.png" class="mr-3 h-6 sm:h-9" alt="3E System Logo " width=100%/>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <div class="flex md:order-2">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="contacts.html">Get Started</a></button>
+        </div>
+        <div class="toggle__menu" id='toggle-menu'>
+          <i class="bx bx-grid-alt"></i>
+        </div>
+        <ul class="nav__list" id='nav-menu'>
+          <div class="close__menu" id='close-menu'>
+            <i class="bx bx-x"></i>
+          </div>
+          <li class="nav__item"> <a href="index.html" class="nav__link" >Home</a> </li>
+          <li class="nav__item dropdown"> <a href="solutions.html" class="nav__link dropdown__link text-blue-800">Solutions <i class="bx bxs-chevron-down dropdown__icon"></i>  </a>
+            <div class='megamenu'>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu">AI & Computer Vision </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-hard-hat'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#AICV"> PPE Detection</a>
+                     <p>Detects helmets, gloves, safety vests, masks, and boots</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-truck'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#PPE"> Vehicles Tracking</a>
+                     <p>Track the movements of vehicles at key junctions and roads</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-traffic-barrier'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#vehicles"> Intrusion Detection</a>
+                     <p>Demarcate danger areas and monitor for any trespasses</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-body' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#intrusion"> Posture Detection</a>
+                     <p>Ensure workers adopt proper posture and techniques</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-accessibility' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#posture"> Fall Detection</a>
+                     <p>24/7 Surveillance to detect various forms of accidents</p>
+                   </div>
+                 </li>
+
+                 <li class="megamenu__item">
+                  <div class="megamenu__icon"><i class='bx bx-task' ></i></div>
+                  <div class="megamenu__link">
+                    <a href="solutions.html#fall"> COVID-19 Safe Management Measures</a>
+                    <p>Ensure compliance to COVID-19 Safe Management Measures</p>
+                  </div>
+                </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-hot' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#safeManagement"> Danger Detection</a>
+                     <p>24/7 Surveillance to detect various forms of danger</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-street-view'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#danger"> Crowd Flow Tracking</a>
+                     <p>Track the number of people and crowd flow</p>
+                   </div>
+                 </li>
+
+            
+               </ul>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> Productivity Systems </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-spreadsheet' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#ProductivitySystems"> Assets Management System</a>
+                     <p>Manage, monitor, and track the status of all assets</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-bug' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#assets"> Defect Inspection Application </a>
+                     <p>Streamline defect inspection workflow process digitally</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bxs-building-house' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#defect"> Interactive Virtual Space</a>
+                     <p>Communicate virtually with on-site and remote stakeholders</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-windows'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#VR"> Integrated Project Management System </a>
+                     <p>Connect effortlessly to database via mobile devices</p>
+                   </div>
+                 </li>
+               </ul>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> Data Warehousing & Analytics</li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-data'></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#DataWarehousing"> Data Warehouse & Datalakes </a>
+                     <p>Single source of truth for all site-related data</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-server' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="solutions.html#warehouse"> Data Piplines for ETL Operations </a>
+                     <p>Orchestrate pipelines to extract, transform and load daily data</p>
+                   </div>
+                 </li>
+               </ul>            
+             </div>          
+          </li>
+          <li class="nav__item dropdown"> <a href="products.html" class="nav__link dropdown__link">Products <i class="bx bxs-chevron-down dropdown__icon"></i>  </a>
+            <div class='megamenu'>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> 3eVision™ AI Systems </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-traffic-cone' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html"> 3eVision™ Worksites</a>
+                     <p>PPE Detection, Traffic Control, Assets Management, Project Monitoring</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-home-smile'></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#eldercare"> 3eVision™ Eldercare </a>
+                     <p>Accident and Fall Detection, Danger Detection, Resident Analysis, Quality Assurance</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-train' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#transport"> 3eVision™ Transport </a>
+                     <p>Passenger Tracking, Trainload Analysis, Object Detection, Crowd Size Analysis, Site Navigation</p>
+                   </div>
+                 </li>
+               </ul>
+               <ul class='megamenu__content'>
+                 <li class="megamenu__item header__megamenu"> Software </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-mobile' ></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#software"> Mobile App </a>
+                     <p>Receive notifications and check in wherever you are</p>
+                   </div>
+                 </li>
+                 <li class="megamenu__item">
+                   <div class="megamenu__icon"><i class='bx bx-globe'></i></i></div>
+                   <div class="megamenu__link">
+                     <a href="products.html#software"> Web Application </a>
+                     <p>Access to site-related data effortlessly</p>
+                   </div>
+                 </li>
+
+                 <li class="megamenu__item">
+                  <div class="megamenu__icon"><i class='bx bx-terminal'></i></div>
+                  <div class="megamenu__link">
+                    <a href="products.html#software"> Desktop Application </a>
+                    <p>Access to site-related data effortlessly</p>
+                  </div>
+                </li>
+               </ul>            
+             </div>          
+          </li>
+          <li class="nav__item"> <a href="resources.html" class="nav__link">Resources</a> </li>
+          <li class="nav__item"> <a href="about.html" class="nav__link">About Us</a> </li>
+          <li class="nav__item"> <a href="contacts.html" class="nav__link">Contact</a> </li>
+
+        </ul>
+
+        </div>
+      </nav>
+     
+    </header>
+
+    <!-- Hero -->
+    
+    <section class="relative">
+      <div class="container flex flex-col-reverse lg:flex-row items-center gap-10 mt-14 lg:mt-52">
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-10">
+            Artificial Intelligence and Computer Vision
+          </h2>
+          <p class="text-bookmark-grey lg:text-lg text-center lg:text-left mb-10">
+            Custom Training, Offline Deployment and Continuous Reinforced Learning
+          </p>
+          <p class="text-bookmark-grey lg:text-lg text-center lg:text-left mb-10">
+            Every model is custom-trained, specific to each business needs to ensure a high level of detection 
+            accuracy (up to 95%). The AI solutions may be deployed to an offline system to ensure data security and
+            privacy concerns. Overtime, AI models can be further improved automatically after its deployment to production
+            by learning as it goes
+          </p>
+          <div class="flex justify-center flex-wrap gap-6">
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">
+              <a href="#AICV">Learn More</a>
+            </button>
+            <button type="button" class="btn btn-white hover:bg-bookmark-purple hover:text-white">
+              <a href="contacts.html">Start Today</a>
+            </button>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="flex justify-center flex-1 mt-14 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/3eVision.png" alt=""/>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div
+        class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 top-32 right-0 lg:-bottom-28 lg:-right-0"
+      ></div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60" id="AICV">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Artificial Intelligence and Computer Vision Solutions</h1>
+        <p class="text-center text-bookmark-grey mt-4">
+          Select from a wide range of models that suits your business needs and application
+          
+        </p>
+      </div>
+      
+      <!-- Feature #1 -->
+      <div class="relative mt-20 lg:mt-24" id="PPE">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/PPE.gif"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">PPE Detection</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Automatically detect any violation of worksite requirements on Personal Protective Equipment (PPE).
+              You can ensure all personnel are properly geared to perform high-risk tasks. Alerts will be sent to site
+              supervisors whenever the system detects a violation
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"> 
+              <a href="products.html">More Info</a>
+            </button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #2 -->
+      <div class="relative mt-20 lg:mt-52"  id="vehicles">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/VehicleTracking.gif"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Vehicles Tracking</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Track the movements of various types of vehicles at key junctions and critical roads to prevent
+              congestions and fire hazards. Alerts will be sent to site managers whenever there is any violation
+              at the work site 
+              
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-24 -right-0"
+        ></div>
+      </div>
+      <!-- Feature #3 -->
+      <div class="relative mt-20 lg:mt-52"  id="intrusion">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/IntrusionDetection.gif"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Intrusion Detection</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Demarcate specific zones in each site to indicate danger areas. Any trespasses into demarcated zones
+              will trigger immediate alerts. Users can draw and define custom areas, as well as customize different activation time
+              of each danger zone
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #4 -->
+      <div class="relative mt-20 lg:mt-52"  id="posture">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/PostureDetection.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Posture Detection</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Ensure works adopt proper postures and techniques when performing high-risk tasks such as 
+              handling heavy objects. Processed videos can be retrieved for corrective trianing purposes 
+              
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+        class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-24 -right-0"
+        ></div>
+      </div>
+      <!-- Feature #5 -->
+      <div class="relative mt-20 lg:mt-52"  id="fall">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/FallDetection.gif"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Fall Detection</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              24/7 AI Surveillance to automatically detect various forms of accidents occuring within 
+              the facility, which can include fainting, slip and fall, choking, and being hit by falling objects.
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html#eldercare">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #6 -->
+      <div class="relative mt-20 lg:mt-52"  id="safeManagement">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/Distance.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">COVID-19 Safe Management Measures</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Ensure all workers comply with the COVID-19 Safe Management Measures, which include wearing 
+              facial masks and observing safe distance 
+              
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-24 -right-0"
+        ></div>
+      </div>
+      <!-- Feature #7 -->
+      <div class="relative mt-20 lg:mt-52"  id="danger">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/DangerDetection.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Danger Detection</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              24/7 AI Surveillance to automatically detect various forms of danger occuring within the site, 
+              which includes fire, smoke and wet floors
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html#eldercare">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #8 -->
+      <div class="relative mt-20 lg:mt-52"  id="crowd">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/CrowdFlowTracking.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Crowd Flow Tracking</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Track the number of people and their movements within a facility. Spatial heat maps can be 
+              generated to analyze the crowd flow 
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html#transport">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-24 -right-0"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="py-20 mt-20">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Unique Selling Point</h1>
+        <p class="text-center text-bookmark-grey mt-4">
+          Here's why you should choose us
+        </p>
+      </div>
+      <!-- Cards -->
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+        <!-- Card 1 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+              <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+            </svg>
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Custom Training</h3>
+            <p class="text-center mb-2 text-bookmark-grey font-light">Each model is specifically trained to each business needs to ensure high level of detection accuracy (up to 95%)</p>
+          </div>
+          
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+              <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+            </svg>
+            <h3 class="text-center mt-5 mb-2 text-bookmark-blue text-lg">Offline Deployment</h3>
+            <p class="text-center mb-2 text-bookmark-grey font-light">AI Solutions can be deployed to an offline system to ensure data security and privacy concerns</p>
+          </div>
+         
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+              <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
+              <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
+            </svg>
+            <h3 class="text-center mt-5 mb-2 text-bookmark-blue text-lg">Continuous Reinforced Training</h3>
+            <p class="text-center mb-2 text-bookmark-grey font-light">AI models can be further improved automatically after deployment to production as it learn by it goes</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-40" id="ProductivitySystems">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Productivity Systems</h1>
+        <p class="text-center text-bookmark-grey mt-4">
+          Provide highly customizable project management tools, mobile applications, and AI assisted reporting systems to streamline your day-to-day business operations.
+        </p>
+      </div>
+      
+      <!-- Feature #1 -->
+      <div class="relative mt-20 lg:mt-24" id ='assets'>
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/assetsManagement.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Assets Management System</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              An one-stop solution to manage, monitor, and track the status of all assets in your construction sites. 
+              Allows inspectors to report defects seamlessly and to schedule for rectification with a single click.
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #2 -->
+      <div class="relative mt-20 lg:mt-52" id="defect">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/defectInspection.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Defect Inspection Application</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Capture defect inspection data from a mobile device and submit reports easily using AI-assisted forms. 
+              Streamline workflow process by digitally approving requests from any mobile device. 
+              All inspection data will be tracked, monitored and sync-ed with all 3eVision systems.
+              
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-24 -right-0"
+        ></div>
+      </div>
+      <!-- Feature #3 -->
+      <div class="relative mt-20 lg:mt-52" id="VR">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/interactVR.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Interactive Virtual Space</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Enter into an interactive virtual space to communicate with other on-site and remote stakeholders. 
+              Monitor the status of construction sites remotely without the need to present physcially.  
+              Allows managers and engineers to better communicate the progress of construction sites using Building Information Models.
+
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #4 -->
+      <div class="relative mt-20 lg:mt-52" id="dashboard">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/analyticsDashboard.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Integrated Project Management System</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Connect effortlessly to the single source of truth database via any mobile device. Safety officers can remotely oversee whole site safety and receive safety reports through 
+              dashboard from various ends. It is a one place channel to retrieve all site related data, logs, and reports.
+
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="
+            hidden
+            lg:block
+            overflow-hidden
+            bg-bookmark-purple
+            rounded-l-full
+            absolute
+            h-80
+            w-2/5
+            -bottom-24
+            -right-0
+          "
+        ></div>
+      </div>
+
+
+
+    
+    <!-- Features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60" id="DataWarehousing">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Data Warehousing & Analytics</h1>
+        <p class="text-center text-bookmark-grey mt-4">
+          Develop and maintain database systems and publish real-time analytic dashboards to provide timely operation insights.
+        </p>
+      </div>
+      
+      <!-- Feature #1 -->
+      <div class="relative mt-20 lg:mt-24" id="warehouse">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/dataWarehouse.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Data Warehouse & Datalakes</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Create a single source of truth for all on-site and remote stakeholders. Historical records will be automatically processed and transformed for analytical purposes. 
+              Predictive Machine Learning models can be trained using the data collected to perform predictive analytics to prevent accidents from happening.
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+        ></div>
+      </div>
+      <!-- Feature #2 -->
+      <div class="relative mt-20 lg:mt-52" id="etl">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <!-- Image -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              class="rounded w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./imgs/datafactory.png"
+              alt=""
+            />
+          </div>
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Data Piplines for Extract, Transform, Load (ETL) Operations</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+              Orchestrate data pipelines to automatically extract, transform and load raw data into a database on a scheduled basis. 
+              Subsequently, the data can be visualized on a cloud-host dashboard to provide real-time organization insights.
+            </p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black"><a href="products.html">More Info</a></button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div
+          class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-24 -right-0"
+        ></div>
+      </div>
+
+    <!-- Download -->
+    <section class="py-20 mt-20">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Products</h1>
+        <p class="text-center text-bookmark-grey mt-4">
+          We've got different applications for you to monitor the workplace
+        </p>
+      </div>
+      <!-- Cards -->
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+        <!-- Card 1 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
+            <img src="imgs/3eWorkplace.png">
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">3eVision™ Worksites</h3>
+            <p class="mb-2 text-bookmark-grey font-light">Manage your constructions sites</p>
+          </div>
+          <hr class="border-b border-bookmark-white" />
+          <div class="flex p-6">
+            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+              <a href="products.html">More Info</a>
+            </button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col rounded-md shadow-md lg:my-8">
+          <div class="p-6 flex flex-col items-center">
+            <img src="imgs/3eEldercare.png">
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">3eVision™ Eldercare</h3>
+            <p class="mb-2 text-bookmark-grey font-light">Improve resident care in your centers</p>
+          </div>
+          <hr class="border-b border-bookmark-white" />
+          <div class="flex p-6">
+            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+              <a href="products.html#eldercare">More Info</a>
+            </button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mt-16">
+          <div class="p-6 flex flex-col items-center">
+            <img src="imgs/3eTransport.png">
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">3eVision™ Transport</h3>
+            <p class="mb-2 text-bookmark-grey font-light">Passenger control and analysis at your stations</p>
+          </div>
+          <hr class="border-b border-bookmark-white" />
+          <div class="flex p-6">
+            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+              <a href="products.html#transport">More Info</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="bg-bookmark-purple text-white py-20">
+      <div class="container">
+        <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+          <p class="font-light uppercase text-center mb-8">Start your journey today</p>
+          <h1 class="text-3xl text-center">Contact us for a demo</h1>
+          <div class="flex flex-col sm:flex-row gap-6 mt-8">
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+            />
+            <button type="button" class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-bookmark-blue py-8">
+      <div class="container flex flex-col md:flex-row items-center">
+        <div class="flex flex-1 flex-wrap items-center justify-center gap-12">
+          <ul class="flex text-white uppercase gap-3 lg:gap-12  text-xs footer-list ">
+            <li> <a href="index.html">© 3eSystems 2022</a> </li>
+            <li class="cursor-pointer"> <a href="solutions.html">Solutions</a></li>
+            <li class="cursor-pointer"> <a href="products.html">Products</a></li>
+            <li class="cursor-pointer"> <a href="resources.html">Resources</a> </li>
+            <li class="cursor-pointer"> <a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
